@@ -1,0 +1,224 @@
+@import 'variables';
+@import 'mixins';
+
+.top_notification {
+    @include flex-center();
+    width: 100%;
+    height: 58px;
+    background: $light-gray-color;
+    box-shadow: 0px -0.998677134513855px 0px 0px #E5E5E5 inset;
+    flex-direction: column;
+    font-family: $font-family;
+
+    .notification_title {
+        color: $black-color;
+        text-align: center;
+        font-size: $large-font-size;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 16px;
+        margin-top: 10px;
+    }
+
+    .notification_content {
+        cursor: pointer;
+        color: $black-color;
+        font-size: $medium-font-size;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px;
+        text-decoration-line: underline;
+    }
+}
+
+.body_wrapper {
+    @include body_container();
+
+    #banner {
+        position: relative;
+        width: 1416px;
+        height: 705px;
+        margin-bottom: 30px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        #banner_title {
+            position: absolute;
+            top: 43px;
+            left: 157px;
+            text-transform: uppercase;
+            font-size: 58px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 60px;
+            color: $black-color;
+            text-align: center;
+            width: 1082px;
+
+            span {
+                color: $white-color;
+            }
+        }
+    }
+
+    #banner_bottom {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+
+        #banner_description {
+            text-align: center;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+            color: $black-color;
+        }
+    }
+}
+
+#featured {
+    .featured_cards {
+        width: 702px;
+        height: 685px;
+        position: relative;
+
+        .featured_cards_image {
+            position: absolute;
+            img {
+                width: 702px;
+                height: 685px;
+            }
+        }
+
+        .featured_cards_info {
+            position: absolute;
+            left: 48px;
+            bottom: 48px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            color: $black-color;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            width: 475px;
+        }
+    }
+}
+
+#exclusive_sales {
+    #exclusive_sales_body {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        align-items: center;
+
+        #exclusive_sales_image {
+            width: 100%;
+            height: 688px;
+            position: relative;
+    
+            &::before {
+                content: 'Summer posibilities';
+                text-transform: uppercase;
+                font-size: 115px;
+                font-weight: 500;
+                line-height: 126px;
+                width: 100%;
+                display: block;
+                text-align: center;
+                position: absolute;
+                bottom: 0;
+                color: $white-color;
+            }
+    
+            img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+    
+        #exclusive_sales_description {
+            text-align: center;
+            width: 1050px;
+            font-size: 16px;
+            color: $black-color;
+            font-weight: 400;
+        }
+    }
+}
+
+#workout, #more_design {
+    .workout_card, .more_design_card {
+        width: 465px;
+        height: 700px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: inherit;
+        }
+
+        .workout_card_button, .more_design_card_button {
+            position: absolute;
+            left: 48px;
+            bottom: 48px;
+        }
+    }
+}
+
+
+#more_design {
+    .more_design_card {
+        width: 465px;
+        height: 465px;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 465px;
+            object-fit: cover;
+        }
+
+        .more_design_card_button {
+            position: absolute;
+            left: 48px;
+            bottom: 48px;
+        }
+    }
+}
+
+
+#bottom_nav {
+    width: 880px;
+    height: 192px;
+    margin: 77px auto 60px auto;
+    display: flex;
+    justify-content: space-between;
+
+    .bottom_nav_element {
+        width: 210px;
+
+        ul {
+            padding-inline-start: 0;
+            
+            li {
+                color: #757575;
+                line-height: 24px;
+                margin-bottom: 12px;
+                font-size: 15px;
+                font-weight: 500;
+
+                &:first-child {
+                    color: $black-color;
+                    margin-bottom: 24px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

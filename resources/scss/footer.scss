@@ -1,0 +1,103 @@
+@import 'variables';
+@import 'mixins';
+
+
+#footer_wrapper {
+    @include grand_container();
+    height: 331px;
+    background-color: $black-color;
+    color: $gray-color;
+
+    #footer {
+        width: 1440px;
+        max-width: 1440px;
+        height: 313px;
+        margin: auto;
+        background-color: $black-color;
+        padding: 40px 34px 0 34px;
+
+        #footer_body {
+            display: flex;
+            width: 1029px;
+            height: 213px;
+
+            .footer_content_block {
+                text-transform: capitalize;
+                font-size: $font-size;
+                width: 257px;
+
+                &:first-child {
+                    @include uppercase-white-text();
+                    li {
+                        line-height: 33px;
+                        font-size: $small-font-size;
+                    }
+                }
+
+                &:not(:first-child) {
+                    li {
+                        &:first-child {    
+                            @include uppercase-white-text();
+                        }
+                    }
+                }
+
+                ul {
+                    padding-inline-start: 0;
+
+                    li {
+                        line-height: 28px;
+                        font-weight: 400;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        #footer_bottom {
+            width: 1372px;
+            height: 62px;
+            margin-top: 16px;
+            display: flex;
+            justify-content: space-between;
+
+            #footer_bottom_left {
+                display: flex;
+                line-height: 62px;
+                font-weight: 400;
+                gap: 16px;
+
+                #location {
+                    display: flex;
+                    font-size: $font-size;
+                    color: $white-color;
+
+                    img {
+                        width: 15px;
+                        height: 15px;
+                    }
+                }
+
+                #copyright {
+                    font-size: $medium-font-size;
+                }
+            }
+
+            #footer_bottom_right {
+                ul {
+                    display: flex;
+                    padding-inline-start: 0;
+                    justify-content: space-around;
+                    gap: 35px;
+                    line-height: 62px;
+    
+                    li {
+                        cursor: pointer;
+                        font-size: $font-size;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

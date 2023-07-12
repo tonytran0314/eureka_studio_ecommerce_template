@@ -1,0 +1,235 @@
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.visit_button {
+  background-color: #111;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 30px;
+  padding: 4px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.visit_button:hover {
+  background-color: #0D6EFD;
+}
+
+.subtitle {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 23px;
+  font-weight: 500;
+  color: #111;
+}
+
+.card_container {
+  display: flex;
+  gap: 12px;
+}
+
+.top_notification {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 58px;
+  background: #F5F5F5;
+  box-shadow: 0px -0.9986771345px 0px 0px #E5E5E5 inset;
+  flex-direction: column;
+  font-family: "Helvetica";
+}
+.top_notification .notification_title {
+  color: #111;
+  text-align: center;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px;
+  margin-top: 10px;
+}
+.top_notification .notification_content {
+  cursor: pointer;
+  color: #111;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.body_wrapper {
+  width: 1416px;
+  max-width: 1416px;
+  margin: auto;
+}
+.body_wrapper #banner {
+  position: relative;
+  width: 1416px;
+  height: 705px;
+  margin-bottom: 30px;
+}
+.body_wrapper #banner img {
+  width: 100%;
+  height: auto;
+}
+.body_wrapper #banner #banner_title {
+  position: absolute;
+  top: 43px;
+  left: 157px;
+  text-transform: uppercase;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  color: #111;
+  text-align: center;
+  width: 1082px;
+}
+.body_wrapper #banner #banner_title span {
+  color: #FFF;
+}
+.body_wrapper #banner_bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.body_wrapper #banner_bottom #banner_description {
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: #111;
+}
+
+#featured .featured_cards {
+  width: 702px;
+  height: 685px;
+  position: relative;
+}
+#featured .featured_cards .featured_cards_image {
+  position: absolute;
+}
+#featured .featured_cards .featured_cards_image img {
+  width: 702px;
+  height: 685px;
+}
+#featured .featured_cards .featured_cards_info {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: #111;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 475px;
+}
+
+#exclusive_sales #exclusive_sales_body {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+}
+#exclusive_sales #exclusive_sales_body #exclusive_sales_image {
+  width: 100%;
+  height: 688px;
+  position: relative;
+}
+#exclusive_sales #exclusive_sales_body #exclusive_sales_image::before {
+  content: "Summer posibilities";
+  text-transform: uppercase;
+  font-size: 115px;
+  font-weight: 500;
+  line-height: 126px;
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  color: #FFF;
+}
+#exclusive_sales #exclusive_sales_body #exclusive_sales_image img {
+  width: inherit;
+  height: inherit;
+}
+#exclusive_sales #exclusive_sales_body #exclusive_sales_description {
+  text-align: center;
+  width: 1050px;
+  font-size: 16px;
+  color: #111;
+  font-weight: 400;
+}
+
+#workout .workout_card, #workout .more_design_card, #more_design .workout_card, #more_design .more_design_card {
+  width: 465px;
+  height: 700px;
+  position: relative;
+}
+#workout .workout_card img, #workout .more_design_card img, #more_design .workout_card img, #more_design .more_design_card img {
+  width: 100%;
+  height: inherit;
+}
+#workout .workout_card .workout_card_button, #workout .workout_card .more_design_card_button, #workout .more_design_card .workout_card_button, #workout .more_design_card .more_design_card_button, #more_design .workout_card .workout_card_button, #more_design .workout_card .more_design_card_button, #more_design .more_design_card .workout_card_button, #more_design .more_design_card .more_design_card_button {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+}
+
+#more_design .more_design_card {
+  width: 465px;
+  height: 465px;
+  position: relative;
+}
+#more_design .more_design_card img {
+  width: 100%;
+  height: 465px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#more_design .more_design_card .more_design_card_button {
+  position: absolute;
+  left: 48px;
+  bottom: 48px;
+}
+
+#bottom_nav {
+  width: 880px;
+  height: 192px;
+  margin: 77px auto 60px auto;
+  display: flex;
+  justify-content: space-between;
+}
+#bottom_nav .bottom_nav_element {
+  width: 210px;
+}
+#bottom_nav .bottom_nav_element ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+#bottom_nav .bottom_nav_element ul li {
+  color: #757575;
+  line-height: 24px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+#bottom_nav .bottom_nav_element ul li:first-child {
+  color: #111;
+  margin-bottom: 24px;
+  font-weight: 700;
+}/*# sourceMappingURL=home.css.map */

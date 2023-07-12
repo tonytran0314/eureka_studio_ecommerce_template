@@ -1,0 +1,149 @@
+@import 'variables';
+@import 'mixins';
+
+#exploring_header {
+    width: 100%;
+    height: 32px;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 25px 0;
+
+    #exploring_title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 31px;
+    }
+
+    #exploring_action {
+        display: flex;
+        gap: 31px;
+
+        .exploring_option {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 28px;
+            cursor: pointer;
+        }
+    }
+}
+
+#exploring_body_container {
+    display: flex;
+    gap: 80px;
+
+    // LEFT SIDE
+    #exploring_filters {
+        width: 192px;
+        height: auto;
+        
+        ul {
+            padding-inline-start: 0;
+            
+            li {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 27px;
+            }
+        }
+
+        #color {
+            #color_select {
+                display: flex;
+                justify-content: space-around;
+
+                .single_color {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    cursor: pointer;
+                    background-color: black;
+
+                    &:first-child {
+                        background-color: purple;
+                    }
+
+                    &:last-child {
+                        background-color: orange;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    .filter_title {
+        height: 50px;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+        border-top: 1px solid #d9d9d9;
+        margin-top: 20px;
+    }
+
+    .filter_element {
+        input {
+            cursor: pointer;
+        }
+        label {
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    // RIGHT SIDE
+    #exploring_products {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .product_row {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .product_card {
+                width: 350px;
+                height: 520px;
+
+                .product_card_image {
+                    cursor: pointer;
+                }
+
+                .product_card_detail {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    padding: 10px;
+
+                    span {
+                        color: #757575;
+                        font-size: 15px;
+                        font-weight: 400;
+
+                        &:first-child {
+                            color: #9E3500;
+                            font-weight: 500;
+                        }
+
+                        &:nth-child(2), &:last-child {
+                            color: $black-color;
+                            font-weight: 500;
+                        } 
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+}
