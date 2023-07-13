@@ -3,7 +3,8 @@ $(document).ready(function(){
     let item = {
         "name": "Aerodyno DSEA98 Shoe",
         "image": "http://localhost:8000/images/cart/item.jpg",
-        "price": "$178.00"
+        "price": "$178.00",
+        "quantity": 1
     };
 
     $('#add_to_cart_button').click(() => {

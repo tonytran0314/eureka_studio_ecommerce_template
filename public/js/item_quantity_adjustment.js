@@ -1,14 +1,22 @@
 $(document).ready(function(){
+    let currentQuantity;
     $('.minus').click(() => {
-        let currentQuantity = parseInt($('.quantity').text());
+        currentQuantity = parseInt($('.quantity').text());
         $('.quantity').text(currentQuantity-1);
+
+        updateQuantity();
+
     });
     $('.plus').click(() => {
-        let currentQuantity = parseInt($('.quantity').text());
+        currentQuantity = parseInt($('.quantity').text());
         $('.quantity').text(currentQuantity+1);
-        
-        if(currentQuantity == 99) {
-            alert('Wait wait mah home boy, whatchu buy 99 pair of shoes for ?')
-        }
+
+        updateQuantity();
     });
+
+    const updateQuantity = () => {
+        let item = JSON.parse(localStorage.getItem('cartItem'));
+        item.quantity = currentQuantity;
+        localStorage.setItem('cartItem', JSON.stringify(item));
+    }
 });

@@ -10,6 +10,7 @@ $(document).ready(function(){
         $('#cart_item_image').attr('src', item.image);
         $('.cart_item_name').text(item.name);
         $('.cart_item_price').text(item.price);
+        $('.quantity').text(item.quantity);
 
     } else {
 
