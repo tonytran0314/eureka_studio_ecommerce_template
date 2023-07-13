@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+.visit_button {
+  background-color: #111;
+  color: #FFF;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  border-radius: 30px;
+  padding: 4px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.visit_button:hover {
+  background-color: #0D6EFD;
+}
+
+.subtitle {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  font-size: 23px;
+  font-weight: 500;
+  color: #111;
+}
+
+.card_container {
+  display: flex;
+  gap: 12px;
+}
+
+.top_banner {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.top_banner .top_banner_image {
+  position: relative;
+}
+.top_banner .top_banner_image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.top_banner .top_banner_image .top_banner_image_description {
+  position: absolute;
+  top: 43px;
+  left: 157px;
+  right: 177px;
+  color: #111;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.top_banner .top_banner_image .top_banner_image_description span {
+  color: #FFF;
+}
+.top_banner .top_banner_information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.product_row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 60px;
+}
+.product_row .product_card {
+  display: flex;
+  height: 520px;
+  flex-direction: column;
+}
+.product_row .product_card .product_card_image {
+  cursor: pointer;
+  width: auto;
+}
+.product_row .product_card .product_card_detail {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px;
+}
+.product_row .product_card .product_card_detail span {
+  color: #757575;
+  font-size: 15px;
+  font-weight: 400;
+}
+.product_row .product_card .product_card_detail span:first-child {
+  color: #9E3500;
+  font-weight: 500;
+}
+.product_row .product_card .product_card_detail span:nth-child(2), .product_row .product_card .product_card_detail span:last-child {
+  color: #111;
+  font-weight: 500;
+}
+
+.exclusive_shoes_container {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.exclusive_shoes_container .exclusive_shoes_header {
+  text-align: center;
+  color: #111;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  justify-content: center;
+}
+.exclusive_shoes_container .exclusive_shoes_header .exclusive_shoes_category {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+.exclusive_shoes_container .exclusive_shoes_header .exclusive_shoes_name {
+  font-size: 57px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+.exclusive_shoes_container .exclusive_shoes_header .exclusive_shoes_description {
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.section_header {
+  color: #111;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+
+.three_columns_section_container {
+  margin: 30px 0;
+}
+.three_columns_section_container .three_columns_section_body {
+  display: flex;
+  gap: 12px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.three_columns_section_container .three_columns_section_body .three_columns_card {
+  width: 465px;
+  height: auto;
+  position: relative;
+}
+.three_columns_section_container .three_columns_section_body .three_columns_card img {
+  width: 100%;
+  height: auto;
+}
+.three_columns_section_container .three_columns_section_body .three_columns_card .visit_button {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+}
+
+@media (max-width: 800px) {
+  .three_columns_section_body {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .two_columns_section_body {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .top_banner_image_description {
+    display: none;
+  }
+}
+@media (max-width: 1080px) {
+  .exclusive_shoes_container {
+    flex-direction: column;
+  }
+  .exclusive_shoes_container .product_row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+  }
+}
+@media (max-width: 1300px) {
+  #footer_bottom {
+    padding: 0 50px;
+  }
+  #footer {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=general_configs.css.map */

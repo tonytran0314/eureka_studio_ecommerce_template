@@ -100,50 +100,24 @@
     // RIGHT SIDE
     #exploring_products {
         width: 100%;
+        max-width: 1176px;
         height: auto;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         gap: 20px;
 
-        .product_row {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-
-            .product_card {
-                width: 350px;
-                height: 520px;
-
-                .product_card_image {
-                    cursor: pointer;
-                }
-
-                .product_card_detail {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 3px;
-                    padding: 10px;
-
-                    span {
-                        color: #757575;
-                        font-size: 15px;
-                        font-weight: 400;
-
-                        &:first-child {
-                            color: #9E3500;
-                            font-weight: 500;
-                        }
-
-                        &:nth-child(2), &:last-child {
-                            color: $black-color;
-                            font-weight: 500;
-                        } 
-
-                        
-                    }
-                }
-            }
-        }
+        // here
+        // .product_row
     }
 
+}
+
+@media (max-width: 1310px) {
+    .product_card {
+        flex-basis: 80%;
+        flex-direction: row;
+        margin: auto;
+
+    }
 }

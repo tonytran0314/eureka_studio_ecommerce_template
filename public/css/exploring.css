@@ -1,43 +1,3 @@
-li {
-  list-style-type: none;
-  cursor: pointer;
-}
-
-a, a:hover {
-  text-decoration: none;
-}
-
-.visit_button {
-  background-color: #111;
-  color: #FFF;
-  text-align: center;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  border-radius: 30px;
-  padding: 4px 15px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-.visit_button:hover {
-  background-color: #0D6EFD;
-}
-
-.subtitle {
-  width: 100%;
-  height: 50px;
-  margin-top: 30px;
-  font-size: 23px;
-  font-weight: 500;
-  color: #111;
-}
-
-.card_container {
-  display: flex;
-  gap: 12px;
-}
-
 #exploring_header {
   width: 100%;
   height: 32px;
@@ -118,39 +78,18 @@ a, a:hover {
 }
 #exploring_body_container #exploring_products {
   width: 100%;
+  max-width: 1176px;
   height: auto;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   gap: 20px;
 }
-#exploring_body_container #exploring_products .product_row {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-#exploring_body_container #exploring_products .product_row .product_card {
-  width: 350px;
-  height: 520px;
-}
-#exploring_body_container #exploring_products .product_row .product_card .product_card_image {
-  cursor: pointer;
-}
-#exploring_body_container #exploring_products .product_row .product_card .product_card_detail {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  padding: 10px;
-}
-#exploring_body_container #exploring_products .product_row .product_card .product_card_detail span {
-  color: #757575;
-  font-size: 15px;
-  font-weight: 400;
-}
-#exploring_body_container #exploring_products .product_row .product_card .product_card_detail span:first-child {
-  color: #9E3500;
-  font-weight: 500;
-}
-#exploring_body_container #exploring_products .product_row .product_card .product_card_detail span:nth-child(2), #exploring_body_container #exploring_products .product_row .product_card .product_card_detail span:last-child {
-  color: #111;
-  font-weight: 500;
+
+@media (max-width: 1310px) {
+  .product_card {
+    flex-basis: 80%;
+    flex-direction: row;
+    margin: auto;
+  }
 }/*# sourceMappingURL=exploring.css.map */

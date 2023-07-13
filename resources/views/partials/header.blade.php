@@ -6,9 +6,9 @@
         <div id="menu">
             <div id="nav_bar">
                 <ul>
-                    <li><a href="#">Men</a></li>
-                    <li><a href="#">Women</a></li>
-                    <li><a href="#">Kids</a></li>
+                    <li><a href="{{ route('men') }}">Men</a></li>
+                    <li><a href="{{ route('women') }}">Women</a></li>
+                    <li><a href="{{ route('selection') }}">Selection</a></li>
                     <li><a href="{{ route('exploring') }}">Exploring</a></li>
                     <li><a href="#">Sale</a></li>
                 </ul>
@@ -22,7 +22,7 @@
                 </div>
                 <div id="purchase_action">
                     <div id="wishlist_icon"><img src="{{ asset('images/icons/wishListIcon.png') }}" alt="wishlist icon"></div>
-                    <div id="cart_icon"><img src="{{ asset('images/icons/cartIcon.png') }}" alt="cart icon"></div>
+                    <div id="cart_icon"><a href="{{ route('cart') }}"><img src="{{ asset('images/icons/cartIcon.png') }}" alt="cart icon"></a></div>
                 </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
+@import 'variables';
 @import 'mixins';
 
 .master_wrapper {
-    @include grand_container();
-    height: auto;
+    // @include grand_container();
+    // height: auto;
 }

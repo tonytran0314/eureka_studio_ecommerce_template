@@ -9,15 +9,18 @@
     <div class="body_wrapper">
 
         <!-- BANNER -->
-        <div id="banner">
-            <img src="{{ asset('images/products/home/banner.png') }}" alt="top banner">
-            <div id="banner_title">Summer is here, and it's time to get out and <span>enjoy the sun!</span></div>
-        </div>
-        <div id="banner_bottom">
-            <div id="banner_description">
-                The best way to beat the heat is to buy new clothes, but if you're not sure where to start we've got you covered. <br>Here are some of our favorite products that will make you look amazing in the summer:
+        <div class="top_banner">
+            <div class="top_banner_image">
+                <img src="{{ asset('images/products/home/banner.png') }}" alt="top banner image">
+                <div class="top_banner_image_description">Summer is here, and it's time to get out and <span>enjoy the sun!</span></div>
             </div>
-            <div class="visit_button">Summer Shop</div>
+            <div class="top_banner_information">
+                <div class="top_banner_description">
+                    The best way to beat the heat is to buy new clothes, but if you're not sure where to start, we've got you covered. <br>
+                    Here are some of our favorite products that will make you look amazing in the summer:
+                </div>
+                <div class="visit_button">Summer Shop</div>
+            </div>
         </div>
 
         <!-- FEATURED -->

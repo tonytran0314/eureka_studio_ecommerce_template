@@ -84,6 +84,7 @@
             <div id="exploring_products">
                 <!-- ROW -->
                 <div class="product_row">
+                    <!-- Card -->
                     <div class="product_card">
                         <div class="product_card_image">
                             <img src="{{ asset('images/products/exploring/item1.png') }}" alt="card_image">
@@ -96,6 +97,8 @@
                             <span>USD: $285</span>
                         </div>
                     </div>
+                    
+                    <!-- Card -->
                     <div class="product_card">
                         <div class="product_card_image">
                             <img src="{{ asset('images/products/exploring/item2.png') }}" alt="card_image">

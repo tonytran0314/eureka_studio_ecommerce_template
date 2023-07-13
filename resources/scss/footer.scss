@@ -9,22 +9,23 @@
     color: $gray-color;
 
     #footer {
-        width: 1440px;
-        max-width: 1440px;
-        height: 313px;
-        margin: auto;
+        // width: 100%;
         background-color: $black-color;
         padding: 40px 34px 0 34px;
+        display: flex;
 
         #footer_body {
             display: flex;
-            width: 1029px;
-            height: 213px;
+            height: auto;
+            flex-direction: row;
+            padding: 0 50px;
+            // justify-content: center;
 
             .footer_content_block {
                 text-transform: capitalize;
                 font-size: $font-size;
-                width: 257px;
+                // width: 257px;
+                padding-right: 150px;
 
                 &:first-child {
                     @include uppercase-white-text();
@@ -55,11 +56,12 @@
         }
 
         #footer_bottom {
-            width: 1372px;
-            height: 62px;
+            // height: auto;
             margin-top: 16px;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: column;
 
             #footer_bottom_left {
                 display: flex;
@@ -87,7 +89,7 @@
                 ul {
                     display: flex;
                     padding-inline-start: 0;
-                    justify-content: space-around;
+                    // justify-content: space-around;
                     gap: 35px;
                     line-height: 62px;
     

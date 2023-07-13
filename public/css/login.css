@@ -1,0 +1,142 @@
+#login_wrapper {
+  text-align: center;
+  margin: 70px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#login_wrapper #login_header {
+  color: #0E0E0E;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+#login_wrapper #login_body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#login_wrapper #login_body #login_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#login_wrapper #login_body #login_form form #input {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+#login_wrapper #login_body #login_form form .input_field {
+  display: grid;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+#login_wrapper #login_body #login_form form .input_field label {
+  color: #6E6E6E;
+  font-size: 9.75px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: -20px;
+}
+#login_wrapper #login_body #login_form form .input_field input {
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #b3b3b3;
+}
+#login_wrapper #login_body #login_form form .input_field i {
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  cursor: pointer;
+}
+#login_wrapper #login_body #login_form form button {
+  padding: 16px 140px;
+  color: #CCC;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: none;
+}
+#login_wrapper #login_body #divider {
+  color: #6E6E6E;
+  font-size: 9.75px;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  padding: 108px 50px;
+}
+#login_wrapper #login_body #login_options {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+#login_wrapper #login_body #login_options .option {
+  display: flex;
+  border: 2px solid #111;
+  cursor: pointer;
+}
+#login_wrapper #login_body #login_options .option .option_icon {
+  padding: 18px 30px;
+}
+#login_wrapper #login_body #login_options .option .option_name {
+  line-height: 65px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0 70px 0 10px;
+}
+#login_wrapper #login_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+#login_wrapper #login_footer #cant_log_in {
+  color: #0E0E0E;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+#login_wrapper #login_footer #term {
+  color: #6E6E6E;
+  text-align: center;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  #login_body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 50px;
+  }
+  #login_body #login_form, #login_body #divider, #login_body #login_options {
+    width: 100%;
+  }
+}/*# sourceMappingURL=login.css.map */
