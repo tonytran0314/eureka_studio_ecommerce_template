@@ -3,7 +3,9 @@ Route list:
 /                   => home page
 
 /exploring          => exploring page
+
 /exploring/men      => men outfit page
+
 /exploring/women    => women outfit page
 
 /selection          => product detail page
