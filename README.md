@@ -17,6 +17,20 @@ Route list:
 
 ****************************************************************************************************************************
 
+More information about files:
+
+SCSS: resources/scss
+
+CSS: public/css
+
+JS: public/js
+
+Routes: routes/web.php
+
+Template: resources/views
+
+****************************************************************************************************************************
+
 Used in this project:
 - PHP (Laravel)
 - Local storage
