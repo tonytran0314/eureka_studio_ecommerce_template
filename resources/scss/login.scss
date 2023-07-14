@@ -2,37 +2,32 @@
 @import 'mixins';
 
 #login_wrapper {
+    @include flex_column();
     text-align: center;
     margin: 70px 0;
-    display: flex;
-    flex-direction: column;
     gap: 45px;
     flex-wrap: wrap;
     justify-content: center;
 
     #login_header {
-        color: #0E0E0E;
+        color: $black-color;
         font-size: 22px;
-        font-style: normal;
-        font-weight: 700;
+        font-weight: $xx-bold-font-weight;
         line-height: 28px;
     }
 
     #login_body {
-        display: flex;
-        flex-direction: row;
+        @include flex_row();
         justify-content: center;
         flex-wrap: wrap;
 
         #login_form {
             form {
-                display: flex;
-                flex-direction: column;
+                @include flex_column();
                 gap: 50px;
 
                 #input {
-                    display: flex;
-                    flex-direction: column;
+                    @include flex_column();
                     gap:50px;
                 }
 
@@ -45,7 +40,6 @@
                     label {
                         color: #6E6E6E;
                         font-size: 9.75px;
-                        font-style: normal;
                         font-weight: 500;
                         line-height: 16px;
                         letter-spacing: 0.75px;
@@ -74,8 +68,7 @@
                     color: #CCC;
                     text-align: center;
                     font-size: 12px;
-                    font-style: normal;
-                    font-weight: 500;
+                    font-weight: $bold-font-weight;
                     line-height: 22px;
                     letter-spacing: 0.5px;
                     text-transform: uppercase;
@@ -85,7 +78,7 @@
         }
 
         #divider {
-            color: #6E6E6E;
+            color: $gray-color;
             font-size: 9.75px;
             font-style: normal;
             font-weight: 500;
@@ -95,13 +88,12 @@
         }
 
         #login_options {
+            @include flex_column();
             padding-top: 50px; 
-            display: flex;
-            flex-direction: column;
             gap: 12px;
 
             .option {
-                display: flex;
+                @include flex_row();
                 border: 2px solid $black-color;
                 cursor: pointer;
 
@@ -111,11 +103,10 @@
 
                 .option_name {
                     line-height: 65px;
-                    color: #000;
+                    color: $black-color;
                     text-align: center;
                     font-size: 14px;
-                    font-style: normal;
-                    font-weight: 500;
+                    font-weight: $bold-font-weight;
                     padding: 0 70px 0 10px;
                 }
             }
@@ -123,16 +114,14 @@
     }
 
     #login_footer {
-        display: flex;
-        flex-direction: column;
+        @include flex_column();
         gap: 35px;
 
         #cant_log_in {
             color: #0E0E0E;
             text-align: center;
             font-size: 12px;
-            font-style: normal;
-            font-weight: 500;
+            font-weight: $bold-font-weight;
             line-height: 22px;
             letter-spacing: 0.5px;
             text-transform: uppercase;
@@ -140,11 +129,10 @@
         }
 
         #term {
-            color: #6E6E6E;
+            color: $gray-color;
             text-align: center;
             font-size: 12px;
-            font-style: normal;
-            font-weight: 400;
+            font-weight: $regular-font-weight;
             line-height: 16px;
             cursor: pointer;
         }
@@ -154,13 +142,10 @@
 @media (max-width: 800px) {
 
     #login_body {
-        display: flex;
+        @include flex_column();
         flex-wrap: wrap;
-        flex-direction: column;
         padding: 0 50px;
 
-        // !!! FLEX ITEMS MUST HAVE THIS SO FLEX-DIRECTION: COLUMN COULD WORK !!!
-        // ULATR FIX 40mins :< khox thet
         #login_form, #divider, #login_options {
             width: 100%; 
         }

@@ -65,7 +65,6 @@ a, a:hover {
   right: 177px;
   color: #111;
   font-size: 58px;
-  font-style: normal;
   font-weight: 500;
   line-height: 60px;
   text-transform: uppercase;
@@ -83,16 +82,16 @@ a, a:hover {
 }
 
 .product_row {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
   gap: 60px;
 }
 .product_row .product_card {
   display: flex;
-  height: 520px;
   flex-direction: column;
+  height: 520px;
 }
 .product_row .product_card .product_card_image {
   cursor: pointer;
@@ -105,13 +104,13 @@ a, a:hover {
   padding: 10px;
 }
 .product_row .product_card .product_card_detail span {
-  color: #757575;
+  color: #7E7E7E;
   font-size: 15px;
   font-weight: 400;
 }
 .product_row .product_card .product_card_detail span:first-child {
   color: #9E3500;
-  font-weight: 500;
+  font-weight: 600;
 }
 .product_row .product_card .product_card_detail span:nth-child(2), .product_row .product_card .product_card_detail span:last-child {
   color: #111;
@@ -119,36 +118,33 @@ a, a:hover {
 }
 
 .exclusive_shoes_container {
-  margin-top: 30px;
   display: flex;
   flex-direction: row;
+  margin-top: 30px;
   justify-content: space-around;
 }
 .exclusive_shoes_container .exclusive_shoes_header {
-  text-align: center;
-  color: #111;
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  text-align: center;
+  color: #111;
+  gap: 30px;
   justify-content: center;
 }
 .exclusive_shoes_container .exclusive_shoes_header .exclusive_shoes_category {
   font-size: 15px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
   text-transform: uppercase;
 }
 .exclusive_shoes_container .exclusive_shoes_header .exclusive_shoes_name {
   font-size: 57px;
-  font-style: normal;
   font-weight: 500;
   line-height: 60px;
   text-transform: uppercase;
 }
 .exclusive_shoes_container .exclusive_shoes_header .exclusive_shoes_description {
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
@@ -156,7 +152,6 @@ a, a:hover {
 .section_header {
   color: #111;
   font-size: 23px;
-  font-style: normal;
   font-weight: 500;
   line-height: 28px;
   margin-bottom: 30px;
@@ -167,8 +162,8 @@ a, a:hover {
 }
 .three_columns_section_container .three_columns_section_body {
   display: flex;
-  gap: 12px;
   flex-direction: row;
+  gap: 12px;
   justify-content: space-around;
 }
 .three_columns_section_container .three_columns_section_body .three_columns_card {
@@ -189,11 +184,11 @@ a, a:hover {
 }
 
 #bottom_nav {
+  display: flex;
+  flex-direction: row;
   width: 75%;
   height: auto;
   margin: 77px auto 60px auto;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 #bottom_nav .bottom_nav_element {
@@ -204,7 +199,7 @@ a, a:hover {
           padding-inline-start: 0;
 }
 #bottom_nav .bottom_nav_element ul li {
-  color: #757575;
+  color: #7E7E7E;
   line-height: 24px;
   margin-bottom: 12px;
   font-size: 15px;
@@ -222,6 +217,7 @@ a, a:hover {
 }
 .two_columns_section_container .two_columns_section_body {
   display: flex;
+  flex-direction: row;
   gap: 12px;
 }
 .two_columns_section_container .two_columns_section_body .two_columns_card {
@@ -235,48 +231,46 @@ a, a:hover {
   height: auto;
 }
 .two_columns_section_container .two_columns_section_body .two_columns_card .two_columns_image .two_columns_detail {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   bottom: 10%;
   left: 5%;
   width: 80%;
-  display: flex;
-  flex-direction: column;
   gap: 30px;
 }
 .two_columns_section_container .two_columns_section_body .two_columns_card .two_columns_image .two_columns_detail .two_columns_description {
   color: #111;
   font-size: 20px;
-  font-style: normal;
   font-weight: 500;
   line-height: 24px;
 }
 
 @media (max-width: 800px) {
-  .three_columns_section_body {
+  .three_columns_section_body, .two_columns_section_body {
+    display: flex;
     flex-direction: column;
+  }
+  .three_columns_section_body {
     flex-wrap: wrap;
     align-items: center;
-  }
-  .two_columns_section_body {
-    flex-direction: column;
   }
   .top_banner_image_description {
     display: none;
   }
 }
 @media (max-width: 1080px) {
-  .exclusive_shoes_container {
+  .exclusive_shoes_container, #bottom_nav {
+    display: flex;
     flex-direction: column;
   }
   .exclusive_shoes_container .product_row {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-  }
-  #bottom_nav {
-    flex-direction: column;
   }
   #bottom_nav .bottom_nav_element {
     margin: auto;
@@ -288,6 +282,7 @@ a, a:hover {
     padding: 0 50px;
   }
   #footer {
+    display: flex;
     flex-direction: column;
   }
 }/*# sourceMappingURL=general_configs.css.map */

@@ -1,44 +1,36 @@
-
-@mixin grand_container() {
-    width: 1512px;
-    max-width: 1512px;
-    margin: auto;
-}
-
-@mixin body_container() {
-    width: 100%;
-    max-width: 1416px;
-    margin: auto;
-}
-
 @mixin uppercase-white-text() {
     text-transform: uppercase;
     color: $white-color;
 }
 
-@mixin flex-center() {
+@mixin flex_row {
     display: flex;
-    align-items: center;
+    flex-direction: row; // optional because default flex-direction value is 'row' for display: flex
+}
+
+@mixin flex_column {
+    display: flex;
+    flex-direction: column; 
 }
 
 @mixin product_detail {
     display: flex;
     flex-direction: column;
-    gap: 3px;
-    padding: 10px;
+    gap: $regular-distance / 10;
+    padding: $regular-distance / 3;
     span {
-        color: #757575;
-        font-size: 15px;
-        font-weight: 400;
+        color: $gray-color;
+        font-size: $large-font-size;
+        font-weight: $regular-font-weight;
 
         &:first-child {
-            color: #9E3500;
-            font-weight: 500;
+            color: $burgundy-color;
+            font-weight: $x-bold-font-weight;
         }
 
         &:nth-child(2), &:last-child {
             color: $black-color;
-            font-weight: 500;
+            font-weight: $bold-font-weight;
         } 
     }
 }

@@ -3,7 +3,9 @@
 
 
 #footer_wrapper {
-    @include grand_container();
+    width: 1512px;
+    max-width: 1512px;
+    margin: auto;
     height: 331px;
     background-color: $black-color;
     color: $gray-color;

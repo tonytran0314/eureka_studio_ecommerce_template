@@ -2,29 +2,28 @@
 @import 'mixins';
 
 #cart_container {
-    margin-top: 30px;
-    display: flex;
+    @include flex_row();
+    margin-top: $regular-distance;
     justify-content: space-around;
 
     .column_title {
-        color: #111;
-        font-size: 21px;
-        font-style: normal;
-        font-weight: 500;
+        color: $black-color;
+        font-weight: $bold-font-weight;
+        margin-bottom: $regular-distance;
         line-height: 33px;
-        margin-bottom: 30px;
+        font-size: 21px;
     }
 
     #cart_left_column {
         flex-basis: 50%;
 
         #cart_item_container {
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
+            @include flex_column();
+            gap: $regular-distance;
+
             .cart_item {
-                display: flex;
-                // gap: 40px;
+                @include flex_row();
+                
                 .cart_item_image {
                     width: 163px;
                     height: 163px;
@@ -57,20 +56,19 @@
                     }
 
                     .cart_item_edit {
-                        display: flex;
-                        gap: 30px;
+                        @include flex_row();
+                        gap: $regular-distance;
 
                         .quantity_edit {
-                            display: flex;
+                            @include flex_row();
 
                             .quantity {
-                                // background-color: red;
-                                padding: 0 10px;
+                                padding: 0 $regular-distance/3;
                                 font-size: 18px;
                             }
 
                             .minus, .plus {
-                                background-color: #ebebeb;
+                                background-color: $light-gray-color;
                                 width: 25px;
                                 height: 25px;
                                 text-align: center;
@@ -98,24 +96,21 @@
     }
 
     #cart_right_column {
+        @include flex_column();
         flex-basis: 35%;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+        gap: $regular-distance;
         
         #receipt_items {
-            display: flex;
-            gap: 20px;
-            flex-direction: column;
+            @include flex_column();
+            gap: $regular-distance * 2/3;
         }
 
         .receipt_row {
-            display: flex;
+            @include flex_row();
             justify-content: space-between;
             color: $black-color;
             font-size: 15px;
-            font-style: normal;
-            font-weight: 500;
+            font-weight: $bold-font-weight;
             line-height: 28px;
         }
 
@@ -132,8 +127,8 @@
 
 @media (max-width: 800px) {
     #cart_container {
-        flex-direction: column;
-        gap: 30px;
+        @include flex_column();
+        gap: $regular-distance;
     }
 
     #cart_left_column, #cart_right_column {

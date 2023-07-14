@@ -1,30 +1,31 @@
 #exploring_header {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 32px;
-  display: flex;
   justify-content: space-between;
   margin: 30px 0 25px 0;
 }
 #exploring_header #exploring_title {
-  font-size: 24px;
-  font-style: normal;
   font-weight: 500;
+  font-size: 24px;
   line-height: 31px;
 }
 #exploring_header #exploring_action {
   display: flex;
-  gap: 31px;
+  flex-direction: row;
+  gap: 30px;
 }
 #exploring_header #exploring_action .exploring_option {
-  font-size: 16px;
-  font-style: normal;
   font-weight: 400;
+  font-size: 16px;
   line-height: 28px;
   cursor: pointer;
 }
 
 #exploring_body_container {
   display: flex;
+  flex-direction: row;
   gap: 80px;
 }
 #exploring_body_container #exploring_filters {
@@ -44,6 +45,7 @@
 }
 #exploring_body_container #exploring_filters #color #color_select {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
 }
 #exploring_body_container #exploring_filters #color #color_select .single_color {
@@ -51,7 +53,7 @@
   height: 30px;
   border-radius: 50%;
   cursor: pointer;
-  background-color: black;
+  background-color: #111;
 }
 #exploring_body_container #exploring_filters #color #color_select .single_color:first-child {
   background-color: purple;
@@ -62,7 +64,6 @@
 #exploring_body_container .filter_title {
   height: 50px;
   font-size: 16px;
-  font-style: normal;
   font-weight: 500;
   line-height: 50px;
   border-top: 1px solid #d9d9d9;
@@ -73,16 +74,15 @@
 }
 #exploring_body_container .filter_element label {
   font-size: 15px;
-  font-style: normal;
   font-weight: 400;
   line-height: 24px;
 }
 #exploring_body_container #exploring_products {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: 1176px;
   height: auto;
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   gap: 20px;
 }
@@ -92,6 +92,7 @@
     flex-basis: 60%;
   }
   #exploring_products .product_row {
+    display: flex;
     flex-direction: column;
     text-align: center;
   }

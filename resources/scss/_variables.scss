@@ -1,14 +1,43 @@
 // colors 
-$black-color: #111;
-$white-color: #FFF;
-$gray-color: #7E7E7E;
-$light-gray-color: #F5F5F5;
+    // black
+    $black-color: #111;
+
+    // white
+    $white-color: #FFF;
+
+    // gray
+    $gray-color: #7E7E7E;
+    $light-gray-color: #F5F5F5;
+
+    // red
+    $burgundy-color: #9E3500;
+
+    // purple
+    $purple-color: purple;
+
+    // orange
+    $orange-color: orange;
+
+    // blue
+    $blue-color: #0D6EFD;
 
 // font family 
 $font-family: 'Helvetica';
 
-// font size
+
+// font sizes
 $large-font-size: 15px;
 $font-size: 12px;
 $medium-font-size: 11px;
 $small-font-size: 10px;
+
+
+// font weights
+$xx-bold-font-weight: 700;
+$x-bold-font-weight: 600;
+$bold-font-weight: 500;
+$regular-font-weight: 400;
+
+
+// distances
+$regular-distance: 30px;

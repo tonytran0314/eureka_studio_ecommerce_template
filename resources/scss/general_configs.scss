@@ -31,7 +31,7 @@ a, a:hover {
     transition: .3s;
 
     &:hover {
-        background-color: #0D6EFD;
+        background-color: $blue-color;
     }
 }
 
@@ -50,9 +50,8 @@ a, a:hover {
 }
 
 .top_banner {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+    @include flex_column();
+    gap: $regular-distance;
 
     .top_banner_image {
         position: relative;
@@ -70,9 +69,8 @@ a, a:hover {
             right: 177px;
             color: $black-color;
             font-size: 58px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 60px;
+            font-weight: $bold-font-weight;
+            line-height: $regular-distance * 2;
             text-transform: uppercase;
             text-align: center;
 
@@ -86,24 +84,20 @@ a, a:hover {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        gap: $regular-distance;
         text-align: center;
     }
 }
 
 .product_row {
-    width: 100%; 
-    display: flex;
+    @include flex_row();
+    width: 100%;
     justify-content: space-between;
-    flex-direction: row;
-    gap: 60px;
-    // flex-wrap: wrap;
+    gap: $regular-distance * 2;
 
     .product_card {
-        display: flex;
-        // width: 350px;
+        @include flex_column();
         height: 520px;
-        flex-direction: column;
 
 
         .product_card_image {
@@ -119,39 +113,34 @@ a, a:hover {
 
 
 .exclusive_shoes_container {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
+    @include flex_row();
+    margin-top: $regular-distance;
     justify-content: space-around;
 
     .exclusive_shoes_header {
+        @include flex_column();
         text-align: center;
         color: $black-color;
-        display: flex;
-        flex-direction: column;
-        gap: 28px;
+        gap: $regular-distance;
         justify-content: center;
 
         .exclusive_shoes_category {
             font-size: 15px;
-            font-style: normal;
-            font-weight: 500;
+            font-weight: $bold-font-weight;
             line-height: 24px;
             text-transform: uppercase;
         }
 
         .exclusive_shoes_name {
             font-size: 57px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: 60px;
+            font-weight: $bold-font-weight;
+            line-height: $regular-distance * 2;
             text-transform: uppercase;
         }
 
         .exclusive_shoes_description {
             font-size: 15px;
-            font-style: normal;
-            font-weight: 400;
+            font-weight: $regular-font-weight;
             line-height: 24px;
         }
     }
@@ -160,19 +149,17 @@ a, a:hover {
 .section_header {
     color: $black-color;
     font-size: 23px;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: $bold-font-weight;
     line-height: 28px;
-    margin-bottom: 30px;
+    margin-bottom: $regular-distance;
 }
 
 .three_columns_section_container {
-    margin: 30px 0;
+    margin: $regular-distance 0;
 
     .three_columns_section_body {
-        display: flex;
+        @include flex_row();
         gap: 12px;
-        flex-direction: row;
         justify-content: space-around;
 
         .three_columns_card {
@@ -197,12 +184,10 @@ a, a:hover {
 
 
 #bottom_nav {
-    // width: 880px;
+    @include flex_row();
     width: 75%;
     height: auto;
     margin: 77px auto 60px auto;
-    display: flex;
-    flex-direction: row;
     justify-content: space-between;
 
     .bottom_nav_element {
@@ -212,16 +197,16 @@ a, a:hover {
             padding-inline-start: 0;
             
             li {
-                color: #757575;
+                color: $gray-color;
                 line-height: 24px;
                 margin-bottom: 12px;
                 font-size: 15px;
-                font-weight: 500;
+                font-weight: $bold-font-weight;
 
                 &:first-child {
                     color: $black-color;
                     margin-bottom: 24px;
-                    font-weight: 700;
+                    font-weight: $xx-bold-font-weight;
                 }
             }
         }
@@ -229,11 +214,11 @@ a, a:hover {
 }
 
 .two_columns_section_container {
-    margin: 30px 0;
+    margin: $regular-distance 0;
     height: auto;
 
     .two_columns_section_body {
-        display: flex;
+        @include flex_row();
         gap: 12px;
 
         .two_columns_card {
@@ -247,19 +232,17 @@ a, a:hover {
                 }
 
                 .two_columns_detail {
+                    @include flex_column();
                     position: absolute;
                     bottom: 10%;
                     left: 5%;
                     width: 80%;
-                    display: flex;
-                    flex-direction: column;
-                    gap: 30px;
+                    gap: $regular-distance;
 
                     .two_columns_description {
                         color: $black-color;
                         font-size: 20px;
-                        font-style: normal;
-                        font-weight: 500;
+                        font-weight: $bold-font-weight;
                         line-height: 24px;
                     }
                 }
@@ -271,27 +254,30 @@ a, a:hover {
 }
 
 @media (max-width: 800px) {
+
+    .three_columns_section_body, .two_columns_section_body {
+        @include flex_column();
+    }
+
     .three_columns_section_body {
-        flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
     }
-    .two_columns_section_body {
-        flex-direction: column;
-        // flex-wrap: wrap;
-        // align-items: center;
-    }
+    
     .top_banner_image_description {
         display: none;
     }
 }
 
 @media (max-width:1080px) {
-    .exclusive_shoes_container {
-        flex-direction: column;
 
+    .exclusive_shoes_container, #bottom_nav {
+        @include flex_column();
+    }
+
+    .exclusive_shoes_container {
         .product_row {
-            display: flex;
+            @include flex_row();
             justify-content: space-around;
             flex-wrap: wrap;
             align-items: center;
@@ -300,10 +286,7 @@ a, a:hover {
     }
 
     #bottom_nav {
-        flex-direction: column;
-
         .bottom_nav_element {
-            // width: 100%;
             margin: auto;
             text-align: center;
         }
@@ -317,6 +300,6 @@ a, a:hover {
     }
 
     #footer {
-        flex-direction: column;
+        @include flex_column();
     }
 }

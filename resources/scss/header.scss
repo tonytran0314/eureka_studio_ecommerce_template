@@ -7,17 +7,16 @@
     margin: auto;
 
     #header {
+        @include flex_row();
         width: 90%;
         margin: auto;
-        display: flex;
         height: 50px;
 
         #logo, #menu {
             flex-grow: 1;
         } 
 
-        #logo {
-
+        #logo 
             img {
                 width: 103px;
             }
@@ -25,14 +24,14 @@
 
         
         #menu {
-            display: flex;
+            @include flex_row();
             justify-content: space-around;
             align-items: center;
 
             #nav_bar {
                 margin-top: 13px;
                 ul {
-                    display: flex;
+                    @include flex_row();
                     gap: 24px;
                     li {
                         a {
@@ -43,7 +42,7 @@
             }
 
             #user_action {
-                display: flex;
+                @include flex_row();
                 gap: 20px;
                 align-items: center;
                 #search_bar {
@@ -64,12 +63,12 @@
                         border: none;
                         padding: 10px 48px 11px 48px;
                         border-radius: 100px;
-                        background: #F5F5F5;
+                        background: $light-gray-color;
                     }
                 }
 
                 #purchase_action {
-                    display: flex;
+                    @include flex_row();
                     gap: 12px;
 
                     img {
@@ -93,16 +92,15 @@
                 z-index: 99;
                 background-color: $white-color;
                 right: 0;
-                padding: 30px;
+                padding: $regular-distance;
                 display: none;
                 flex-direction: column;
                 gap: 20px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
                 ul {
-                    display: flex;
-                    gap: 10px;
-                    flex-direction: column;
+                    @include flex_column();
+                    gap: $regular-distance / 3;
                 }
 
                 a {
@@ -110,7 +108,7 @@
                 }
 
                 #user_action_dropdown {
-                    display: flex;
+                    @include flex_row();
                     justify-content: space-around;
 
                     img {

@@ -2,7 +2,8 @@
 @import 'mixins';
 
 .top_notification {
-    @include flex-center();
+    display: flex;
+    align-items: center;
     width: 100%;
     height: 58px;
     background: $light-gray-color;
@@ -32,57 +33,9 @@
 }
 
 .body_wrapper {
-    @include body_container();
-
-    
-    // #banner {
-    //     position: relative;
-    //     width: 1416px;
-    //     height: 705px;
-    //     margin-bottom: 30px;
-    //     display: flex;
-    //     flex-direction: column;
-    //     gap: 30px;
-
-    //     img {
-    //         width: 100%;
-    //         height: auto;
-    //     }
-
-    //     #banner_title {
-    //         position: absolute;
-    //         top: 43px;
-    //         left: 157px;
-    //         text-transform: uppercase;
-    //         font-size: 58px;
-    //         font-style: normal;
-    //         font-weight: 500;
-    //         line-height: 60px;
-    //         color: $black-color;
-    //         text-align: center;
-    //         width: 1082px;
-
-    //         span {
-    //             color: $white-color;
-    //         }
-    //     }
-    // }
-
-    // #banner_bottom {
-    //     display: flex;
-    //     align-items: center;
-    //     flex-direction: column;
-    //     gap: 30px;
-
-    //     #banner_description {
-    //         text-align: center;
-    //         font-size: 16px;
-    //         font-style: normal;
-    //         font-weight: 400;
-    //         line-height: 24px;
-    //         color: $black-color;
-    //     }
-    // }
+    width: 100%;
+    max-width: 1416px;
+    margin: auto;
 }
 
 #featured {

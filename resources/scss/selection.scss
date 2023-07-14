@@ -2,16 +2,14 @@
 @import 'mixins';
 
 #detail_container {
+    @include flex_row();
     width: 100%;
     height: auto;
-    display: flex;
-    flex-direction: row;
-    margin-top: 30px;
+    margin-top: $regular-distance;
 
     #detail_image_container {
-        display: flex;
+        @include flex_row();
         width: 70%;
-        flex-direction: row;
         gap: 5px;
 
         .detail_image {
@@ -25,41 +23,36 @@
     }
 
     #detail_product_container {
+        @include flex_column();
+        gap: $regular-distance / 2;
         width: 30%;
-        padding: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        padding: $regular-distance;
 
         #detail_product_title {
-            color: #222;
+            color: $black-color;
             font-size: 25px;
-            font-style: normal;
-            font-weight: 600;
+            font-weight: $x-bold-font-weight;
             line-height: 20px;
         }
 
         #detail_product_price {
-            color: #222;
+            color: $black-color;
             font-size: 17px;
-            font-style: normal;
-            font-weight: 300;
+            font-weight: $regular-font-weight;
             line-height: 24px;
         }
 
         #detail_product_color {
             font-size: 12px;
-            font-style: normal;
-            font-weight: 300;
+            font-weight: $regular-font-weight;
             line-height: 20px;
             letter-spacing: 1.3px;
         }
 
         #add_to_cart_button {
-            color: #fff;
+            color: $white-color;
             font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
+            font-weight: $bold-font-weight;
             line-height: 20px; 
             background-color: $black-color;
             padding: 14px 26px;
@@ -69,7 +62,7 @@
             transition: .3s;
 
             &:hover {
-                background-color: #0D6EFD;
+                background-color: $blue-color;
             }
         }
     }   
@@ -78,19 +71,18 @@
 #related_container {
     width: 100%;
     height: auto;
-    margin-top: 60px;
+    margin-top: $regular-distance * 2;
 
     #related_header {
         color: $black-color;
         font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
+        font-weight: $bold-font-weight;
         line-height: 31px;
         margin-bottom: 22px;
     }
 
     #related_body {
-        display: flex;
+        @include flex_row();
         justify-content: space-around;
 
         .related_product_cards {
@@ -114,7 +106,7 @@
 
 @media screen and (max-width: 1030px) {
     #detail_container {
-        flex-direction: column;
+        @include flex_column();
         width: auto;
         margin: auto;
 
@@ -132,8 +124,13 @@
         }
     }
     #related_body {
-        flex-direction: column;
+        @include flex_column();
+        
         align-items: center;
+
+        .related_product_cards {
+            width: 100%;
+        }
     }
     
 }

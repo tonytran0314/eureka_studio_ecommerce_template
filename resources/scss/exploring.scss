@@ -2,27 +2,25 @@
 @import 'mixins';
 
 #exploring_header {
+    @include flex_row();
     width: 100%;
     height: 32px;
-    display: flex;
     justify-content: space-between;
     margin: 30px 0 25px 0;
 
     #exploring_title {
+        font-weight: $bold-font-weight;
         font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
         line-height: 31px;
     }
 
     #exploring_action {
-        display: flex;
-        gap: 31px;
+        @include flex_row();
+        gap: $regular-distance;
 
         .exploring_option {
+            font-weight: $regular-font-weight;
             font-size: 16px;
-            font-style: normal;
-            font-weight: 400;
             line-height: 28px;
             cursor: pointer;
         }
@@ -30,7 +28,7 @@
 }
 
 #exploring_body_container {
-    display: flex;
+    @include flex_row();
     gap: 80px;
 
     // LEFT SIDE
@@ -52,34 +50,31 @@
 
         #color {
             #color_select {
-                display: flex;
+                @include flex_row();
                 justify-content: space-around;
 
                 .single_color {
-                    width: 30px;
-                    height: 30px;
+                    width: $regular-distance;
+                    height: $regular-distance;
                     border-radius: 50%;
                     cursor: pointer;
-                    background-color: black;
+                    background-color: $black-color;
 
                     &:first-child {
-                        background-color: purple;
+                        background-color: $purple-color; 
                     }
 
                     &:last-child {
-                        background-color: orange;
+                        background-color: $orange-color;
                     }
                 }
             }
         }
-
-
     }
 
     .filter_title {
         height: 50px;
         font-size: 16px;
-        font-style: normal;
         font-weight: 500;
         line-height: 50px;
         border-top: 1px solid #d9d9d9;
@@ -92,7 +87,6 @@
         }
         label {
             font-size: 15px;
-            font-style: normal;
             font-weight: 400;
             line-height: 24px;
         }
@@ -100,16 +94,12 @@
 
     // RIGHT SIDE
     #exploring_products {
+        @include flex_column();
         width: 100%;
         max-width: 1176px;
         height: auto;
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
         gap: 20px;
-
-        // here
-        // .product_row
     }
 
 }
@@ -119,7 +109,7 @@
         flex-basis: 60%;
 
         .product_row {
-            flex-direction: column;
+            @include flex_column();
             text-align: center;
         }
     }
