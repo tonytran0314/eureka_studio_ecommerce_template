@@ -28,6 +28,7 @@ Used in this project:
 ****************************************************************************************************************************
 
 Javascript feature details: 
+
 /login : show/hide password feature by clicking the eye/eye_slash icon on password field.
 
 /selection : add to cart feature by clicking 'Add' button. Then a popup appears and notify you have add item to cart successfully.
