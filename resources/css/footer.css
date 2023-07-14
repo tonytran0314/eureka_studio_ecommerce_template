@@ -1,0 +1,82 @@
+#footer_wrapper {
+  width: 1512px;
+  max-width: 1512px;
+  margin: auto;
+  height: 331px;
+  background-color: #111;
+  color: #7E7E7E;
+}
+#footer_wrapper #footer {
+  background-color: #111;
+  padding: 40px 34px 0 34px;
+  display: flex;
+}
+#footer_wrapper #footer #footer_body {
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  padding: 0 50px;
+}
+#footer_wrapper #footer #footer_body .footer_content_block {
+  text-transform: capitalize;
+  font-size: 12px;
+  padding-right: 150px;
+}
+#footer_wrapper #footer #footer_body .footer_content_block:first-child {
+  text-transform: uppercase;
+  color: #FFF;
+}
+#footer_wrapper #footer #footer_body .footer_content_block:first-child li {
+  line-height: 33px;
+  font-size: 10px;
+}
+#footer_wrapper #footer #footer_body .footer_content_block:not(:first-child) li:first-child {
+  text-transform: uppercase;
+  color: #FFF;
+}
+#footer_wrapper #footer #footer_body .footer_content_block ul {
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+#footer_wrapper #footer #footer_body .footer_content_block ul li {
+  line-height: 28px;
+  font-weight: 400;
+  cursor: pointer;
+}
+#footer_wrapper #footer #footer_bottom {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+#footer_wrapper #footer #footer_bottom #footer_bottom_left {
+  display: flex;
+  line-height: 62px;
+  font-weight: 400;
+  gap: 16px;
+}
+#footer_wrapper #footer #footer_bottom #footer_bottom_left #location {
+  display: flex;
+  font-size: 12px;
+  color: #FFF;
+}
+#footer_wrapper #footer #footer_bottom #footer_bottom_left #location img {
+  width: 15px;
+  height: 15px;
+}
+#footer_wrapper #footer #footer_bottom #footer_bottom_left #copyright {
+  font-size: 11px;
+}
+#footer_wrapper #footer #footer_bottom #footer_bottom_right ul {
+  display: flex;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+  gap: 35px;
+  line-height: 62px;
+}
+#footer_wrapper #footer #footer_bottom #footer_bottom_right ul li {
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 400;
+}/*# sourceMappingURL=footer.css.map */
