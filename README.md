@@ -1,25 +1,45 @@
+****************************************************************************************************************************
 Route list: 
 
-/                   => home page
+/                
 
-/exploring          => exploring page
+/exploring          
 
-/exploring/men      => men outfit page
+/exploring/men      
 
-/exploring/women    => women outfit page
+/exploring/women    
 
-/selection          => product detail page
+/selection          
 
-/login              => login page
+/login              
 
-/cart               => shopping cart page
+/cart               
+
+****************************************************************************************************************************
+
+Used in this project:
+- PHP (Laravel)
+- Local storage
+- CSS, SCSS
+- Javascript, JQuery
+- Responsive layout
 
 
+****************************************************************************************************************************
 
+Javascript feature details: 
+/login : show/hide password feature by clicking the eye/eye_slash icon on password field.
 
+/selection : add to cart feature by clicking 'Add' button. Then a popup appears and notify you have add item to cart successfully.
 
+/cart : After add item from '/selection' to cart. The item will appear here.
+- Remove item from cart feature: by clicking 'trash can' icon
+- Quantity adjustment: by clicking minus/plus icon
+*** Note: The item, includes item quantity would be persistent (The item and quantity would NOT be delete after refreshinng thanks to 'local storage')
 
+****************************************************************************************************************************
 
+THANK YOU. WISH YOU HAVE A NICE DAY !
 
 ****************************************************************************************************************************
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
