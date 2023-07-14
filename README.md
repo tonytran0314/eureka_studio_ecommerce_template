@@ -36,6 +36,7 @@ Javascript feature details:
 /cart : After add item from '/selection' to cart. The item will appear here.
 - Remove item from cart feature: by clicking 'trash can' icon
 - Quantity adjustment: by clicking minus/plus icon
+  
 *** Note: The item, includes item quantity would be persistent (The item and quantity would NOT be delete after refreshinng thanks to 'local storage')
 
 ****************************************************************************************************************************
