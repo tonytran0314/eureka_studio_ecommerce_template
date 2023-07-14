@@ -2,7 +2,7 @@ $(document).ready(function(){
 
     let item = {
         "name": "Aerodyno DSEA98 Shoe",
-        "image": "http://http://eureka-ecommerce-6b8a0fc2f8b3.herokuapp.com/images/cart/item.jpg",
+        "image": "http://eureka-ecommerce-6b8a0fc2f8b3.herokuapp.com/images/cart/item.jpg",
         "price": "$178.00",
         "quantity": 1
     };
