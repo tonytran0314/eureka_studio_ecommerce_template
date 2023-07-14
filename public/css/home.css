@@ -125,31 +125,4 @@
   position: absolute;
   left: 48px;
   bottom: 48px;
-}
-
-#bottom_nav {
-  width: 880px;
-  height: 192px;
-  margin: 77px auto 60px auto;
-  display: flex;
-  justify-content: space-between;
-}
-#bottom_nav .bottom_nav_element {
-  width: 210px;
-}
-#bottom_nav .bottom_nav_element ul {
-  -webkit-padding-start: 0;
-          padding-inline-start: 0;
-}
-#bottom_nav .bottom_nav_element ul li {
-  color: #757575;
-  line-height: 24px;
-  margin-bottom: 12px;
-  font-size: 15px;
-  font-weight: 500;
-}
-#bottom_nav .bottom_nav_element ul li:first-child {
-  color: #111;
-  margin-bottom: 24px;
-  font-weight: 700;
 }/*# sourceMappingURL=home.css.map */

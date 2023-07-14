@@ -7,6 +7,7 @@
     @include('partials.dynamic.top_notification')
 
     <div class="body_wrapper">
+
         <div id="exploring_header">
             <div id="exploring_title">Summer Shoes (58)</div>
             <div id="exploring_action">
@@ -14,7 +15,10 @@
                 <div class="exploring_option">Sort By</div>
             </div>
         </div>
+        
         <div id="exploring_body_container">
+
+            <!-- left column -->
             <div id="exploring_filters">
                 <div id="shoes_type">
                     <ul>
@@ -81,6 +85,10 @@
                     </div>
                 </div>
             </div>
+            <!-- / left column -->
+
+
+            <!-- right column -->
             <div id="exploring_products">
                 <!-- ROW -->
                 <div class="product_row">
@@ -207,6 +215,7 @@
                     </div>
                 </div>
             </div>
+            <!-- / right column -->
         
         </div>
         

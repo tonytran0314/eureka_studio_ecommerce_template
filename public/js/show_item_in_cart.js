@@ -13,10 +13,9 @@ $(document).ready(function(){
         $('.quantity').text(item.quantity);
 
     } else {
-
         $('#cart_item_container').hide();
         $('#cart_right_column').hide();
         $('#empty_cart_notification').show();
-
     }
+
 });

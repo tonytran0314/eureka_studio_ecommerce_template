@@ -8,3 +8,4 @@
 <script src="{{ asset('js/show_item_in_cart.js') }}"></script>
 <script src="{{ asset('js/remove_item_from_cart.js') }}"></script>
 <script src="{{ asset('js/item_quantity_adjustment.js') }}"></script>
+<script src="{{ asset('js/dropdown_toggle.js') }}"></script>

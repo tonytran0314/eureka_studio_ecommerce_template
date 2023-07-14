@@ -35,7 +35,8 @@
 
     // LEFT SIDE
     #exploring_filters {
-        width: 192px;
+        width: 100%;
+        max-width: 192px;
         height: auto;
         
         ul {
@@ -113,11 +114,13 @@
 
 }
 
-@media (max-width: 1310px) {
-    .product_card {
-        flex-basis: 80%;
-        flex-direction: row;
-        margin: auto;
+@media (max-width: 1350px) {
+    #exploring_products {
+        flex-basis: 60%;
 
+        .product_row {
+            flex-direction: column;
+            text-align: center;
+        }
     }
 }

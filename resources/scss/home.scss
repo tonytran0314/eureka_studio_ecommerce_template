@@ -196,34 +196,3 @@
         }
     }
 }
-
-
-#bottom_nav {
-    width: 880px;
-    height: 192px;
-    margin: 77px auto 60px auto;
-    display: flex;
-    justify-content: space-between;
-
-    .bottom_nav_element {
-        width: 210px;
-
-        ul {
-            padding-inline-start: 0;
-            
-            li {
-                color: #757575;
-                line-height: 24px;
-                margin-bottom: 12px;
-                font-size: 15px;
-                font-weight: 500;
-
-                &:first-child {
-                    color: $black-color;
-                    margin-bottom: 24px;
-                    font-weight: 700;
-                }
-            }
-        }
-    }
-}
